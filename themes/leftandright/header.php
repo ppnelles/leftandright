@@ -25,9 +25,11 @@ endif; ?>
 	<meta name="HandheldFriendly" content="true" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<meta name="author" content="AUTHOR NAME" />
+	<meta name="author" content="Left And Right" />
 
 	<?php get_template_part( 'template-parts/google', 'head' ); ?>
+
+	<link rel="stylesheet" href="https://use.typekit.net/gfd6xnd.css">
 
 	<?php wp_head(); ?>
 	<?php get_template_part('/template-parts/content', 'favicons' ); ?>	
@@ -62,21 +64,20 @@ endif; ?>
 				</div><!-- .site-branding -->
 
 			<nav id="site-navigation" class="main-navigation">
+
+				<div class="network">
+					<?php get_template_part('template-parts/content','network'); ?>
+				</div>
+
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+					<span class="burger-line"></span>
+					<span class="burger-line"></span>
+					<span class="burger-line"></span>
 					<span class="label"><?php esc_html_e( 'Primary Menu', '_turbo' ); ?></span>
-					<span class="burger-line"></span>
-					<span class="burger-line"></span>
-					<span class="burger-line"></span>
 				</button>
 				<div class="nav-inner">
 					<div class="primary-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'Primary') ); ?>
-					</div>
-					<div class="secondary-menu">
-						<?php wp_nav_menu( array( 'theme_location' => 'Secondary') ); ?>
-						<?php /* <div>
-							<?php do_action('wpml_add_language_selector'); ?>
-						</div> */ ?>
 					</div>
 				</div>
 			</nav><!-- #site-navigation -->

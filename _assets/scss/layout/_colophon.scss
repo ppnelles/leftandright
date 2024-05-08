@@ -1,20 +1,39 @@
 #colophon {
-	background-color: $colophon-bg-color;
-	color: $colophon-text-color;
+	background-color: white;
+	color: #6b9390;
 	font-size: 0.8em;
-	padding: 1em 0;
+	padding: 3em 5% 1.5em;
 	text-align: center;
+	position: relative;
+	overflow: hidden;
+
+	&:after {
+		content: '';
+		display: block;
+		width: 120%;
+		height: 4em;
+		background-color: #c7d6dc;
+		position: absolute;
+	    top: -3em;
+		left: 0;
+		z-index: 2;
+	    transform: rotate(-0.75deg);
+	}
 	
 	@include mappy-bp(screen-sm) {
 		text-align: left;	
 	}
 
 	.site-info {
-		@include container();
+		//@include container();
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		flex-direction: column;
 		
 		@include mappy-bp(screen-sm) {
-			display: flex;
-			flex-wrap: wrap;
+			flex-direction: row;
 			justify-content: space-between;	
 		}
 
@@ -27,16 +46,37 @@
 		}
 	}
 
+	.about {
+		span {
+			display: block;
+
+			@include mappy-bp(screen-sm) {
+				display: inline;	
+			}
+
+			i {
+				font-style: normal;
+				display: none;
+
+				@include mappy-bp(screen-sm) {
+					display: inline;	
+				}
+			}
+		}
+	}
+
 	p {
 		margin: 0;
 	}
 
 	a {
-		color: $colophon-link-color;
+		color: black;
 		font-size: inherit;
+		text-decoration: none;
 
 		&:hover {
-			color: $colophon-link-hover-color;
+			color: black;
+			text-decoration: underline;
 		}
 	}
 

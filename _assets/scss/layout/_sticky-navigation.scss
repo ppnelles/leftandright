@@ -20,12 +20,12 @@ body {
 	&.sticky-menu {
 		
 		#masthead {
-			background-color: rgba($masthead-bgcolor, 0.85);
+			background-color: rgba($dark-green, 0.85);
 			box-shadow: -1px 10px 20px 0 rgba(0,0,0,.25);
 
 			.site-title {
-				width: 50px;
-				height: 50px;
+				width: 110px;
+				height: 35px;
 			} 
 
 			.secondary-menu {

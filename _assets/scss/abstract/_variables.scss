@@ -20,23 +20,23 @@ $breakpoints: (
 * Fonts Families
 */
 
-$f-regular: Georgia, Times, "Times New Roman", serif;
-$f-title: Helvetica, Arial, Verdana, sans-serif;
-$f-quote: Georgia, Times, "Times New Roman", serif;
-$f-light: Georgia, Times, "Times New Roman", serif;
+$f-regular: "brother-1816", Helvetica, Arial, Verdana, sans-serif;
+$f-title: "brother-1816", Helvetica, Arial, Verdana, sans-serif;
+$f-quote: "brother-1816", Helvetica, Arial, Verdana, sans-serif;
+$f-light: "brother-1816", Helvetica, Arial, Verdana, sans-serif;
 
 /*
 * Base Colors
 */
 
 $red: #e43d3d;
-$green: #50d37d;
-$dark-green: #117e36;
+$green: #464e28;
+$dark-green: #30371a;
 $orange: #fe8641;
 $yellow: #ffb516;
 $blue: #4285ff;
 $black: #0a0908;
-$grey-light: #e1e1e1;
+$grey-light: #c7d6dc;
 
 $c-primary: $green;
 $c-secondary: $orange;
@@ -76,7 +76,7 @@ $c-pinterest: #bd081c;
 * scaffolding
 */
 
-$container-max-width: 1800px;
+$container-max-width: 1600px;
 
 /*
 * Forms
@@ -91,8 +91,8 @@ $summary-text-color: white;
 /*
 * $masthead
 */
-$masthead-height: 110px;
-$masthead-bgcolor: white;
+$masthead-height: 0;
+$masthead-bgcolor: transparent;
 
 /*
 * $hero

@@ -107,7 +107,7 @@ get_header();
 			<h2><?php the_field( 'gal_title' ); ?></h2>
 		</header>
 		<div class="the-gallery">
-			<?php for ($i=0; $i < 8; $i++) { ?>
+			<?php for ($i=0; $i < 10; $i++) { ?>
 				<figure><img src="<?php bloginfo('template_directory'); ?>/img/img-placeholder.jpg"></figure>
 			<?php } ?>
 		</div>

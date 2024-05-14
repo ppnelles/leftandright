@@ -9,7 +9,13 @@
  * @package _turbo
  */
 
+if(ICL_LANGUAGE_CODE == 'fr') {
 	$gdprLink = "Mentions légales et vie privée";
+	$regUrl = 8;
+}
+else {
+	$gdprLink = "Privacy policy";
+}
 
 ?>
 

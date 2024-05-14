@@ -69,6 +69,18 @@ endif; ?>
 					<?php get_template_part('template-parts/content','network'); ?>
 				</div>
 
+				<?php 
+					$languages = icl_get_languages('skip_missing=0&orderby=code');
+					foreach ($languages as $l) {
+
+				      if (!$l['active']) {
+				        echo '<a class="single-lang-switch" href="' . $l['url'] . '">';
+				        echo $l['tag'];
+				        echo '</a>';
+				      }
+				  } 
+				?>
+
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<span class="burger-line"></span>
 					<span class="burger-line"></span>

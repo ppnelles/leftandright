@@ -1,5 +1,26 @@
 .page-template-homepage {
 
+	#masthead {
+		.site-title {
+			background: transparent url('img/left-and-right-white.svg') 0 0 no-repeat;
+		}
+	}
+
+	.network a svg circle, 
+	.network a svg path, 
+	.network a svg polygon {
+	    fill: white;
+	}
+
+	.menu-toggle .burger-line {
+		background-color: #fff;
+	}
+
+	a.single-lang-switch {
+		color: white;
+		border-color: white;
+	}
+
 	section {
 		padding: 4em 0;
 		
@@ -18,7 +39,7 @@
 
 			h2 {
 				margin: 0 0 0.25em;
-				font-size: calc(3rem + 1vw);
+				font-size: calc(2.5rem + 1vw);
 			}
 
 			div {
@@ -216,6 +237,7 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
+				max-width: 1800px;
 				display: flex;
 				align-items: center;	
 			}
@@ -225,8 +247,8 @@
 			padding: 2em 0;
 
 			@include mappy-bp(screen-md) {
-				padding: 0;
-				margin: 0 0 0 45%;
+				padding: 0 5% 0 0;
+				margin: 0 0 0 40%;
 				color: white;
 				text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 			}
@@ -271,7 +293,11 @@
 				margin: 1px;
 
 				@include mappy-bp(screen-sm) {
-					width: calc(25% - 2px);	
+					width: calc(33.3333333% - 2px);	
+				}
+
+				@include mappy-bp(screen-md) {
+						width: calc(20% - 2px);	
 				}
 
 				img {

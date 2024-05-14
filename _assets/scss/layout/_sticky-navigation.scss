@@ -24,6 +24,7 @@ body {
 			box-shadow: -1px 10px 20px 0 rgba(0,0,0,.25);
 
 			.site-title {
+				background: transparent url('img/left-and-right-white.svg') 0 0 no-repeat;
 				width: 110px;
 				height: 35px;
 			} 
@@ -32,6 +33,21 @@ body {
 				@include mappy-bp(screen-md) {
 					display: none;
 				}
+			}
+
+			.network a svg circle, 
+			.network a svg path, 
+			.network a svg polygon {
+			    fill: white;
+			}
+
+			.menu-toggle .burger-line {
+				background-color: #fff;
+			}
+
+			a.single-lang-switch {
+				color: white;
+				border-color: white;
 			}
 
 		}

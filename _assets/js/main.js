@@ -51,15 +51,18 @@ jQuery(document).ready(function ($) {
 
 })
 
-jQuery(".menu-anchor a").click(function() {
+jQuery(".page-template-homepage .menu-anchor a").click(function() {
     event.preventDefault();
     var menuItem = jQuery(this).attr('href');
+
+    //console.log(menuItem);
+
 
     jQuery('#site-navigation').removeClass('toggled');
     jQuery('body').removeClass('menu-toggled');
 
     jQuery([document.documentElement, document.body]).animate({
-        scrollTop: jQuery(menuItem).offset().top
+       scrollTop: jQuery(menuItem).offset().top
     }, 500).delay(200);
     
     jQuery('body').removeClass('menu-open');

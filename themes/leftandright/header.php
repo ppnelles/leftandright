@@ -81,6 +81,10 @@ endif; ?>
 				  } 
 				?>
 
+				<ul class="mobile-cart">
+					<?php echo woo_cart_but(); ?>
+				</ul>
+
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 					<span class="burger-line"></span>
 					<span class="burger-line"></span>
@@ -90,6 +94,9 @@ endif; ?>
 				<div class="nav-inner">
 					<div class="primary-menu">
 						<?php wp_nav_menu( array( 'theme_location' => 'Primary') ); ?>
+					</div>
+					<div class="secondary-menu">
+						<?php wp_nav_menu( array( 'theme_location' => 'Secondary') ); ?>
 					</div>
 				</div>
 			</nav><!-- #site-navigation -->

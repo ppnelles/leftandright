@@ -91,7 +91,13 @@
 	}
 
 	.current-menu-item > a {
-		color: $main-nav-active-color;
+		//color: $main-nav-active-color;
+	}
+
+	.network a svg circle, 
+	.network a svg path, 
+	.network a svg polygon {
+	    fill: white;
 	}
 
 	a.single-lang-switch {
@@ -103,7 +109,8 @@
 	  display: inline-block;
 	  padding: 0 .25em;
 	  border-radius: 5px;
-	  border: 1px solid black;
+	  border: 1px solid white;
+	  color: white;
 	  background-color: transparent;
 	  position: relative;
 	  top: -3px;
@@ -134,6 +141,39 @@
 		margin: 0 0.5em 0 0;
 	}
 
+	ul.mobile-cart {
+		margin: 0 1em;
+	}
+
+	a.cart-contents {
+		//@include text-hide();
+		display: block;
+		width: 34px;
+		height: 31px;
+		background: transparent url('img/my-cart.svg') 0 0 no-repeat;
+		position: relative;
+
+      span.cart-link {
+        visibility: hidden;
+        display: none;
+      }
+
+      span.cart-contents-count {
+      	display: inline-block;
+      	width: 20px;
+      	height: 20px;
+      	line-height: 20px;
+      	border-radius: 50%;
+      	text-align: center;
+      	background-color: $black;
+      	color: white;
+      	position: absolute;
+      	top: -5px;
+      	right: -15px;
+      	font-size: 80%;
+      }
+
+	}
 }
 
 
@@ -170,7 +210,7 @@
 		display: block;
 		width: 25px;
 		height: 2px;
-		background-color: $green;
+		background-color: white;
 
 		@include mappy-bp(screen-sm) {
 			width: 37px;
@@ -202,6 +242,7 @@
 	  width: 100%;
 	  height: 100vh;
 	  display: flex;
+	  flex-direction: column;
 	  align-items: center;
 	  justify-content: center;
 	  margin: 0;
@@ -268,18 +309,35 @@
 }
 
 .secondary-menu {
-	@include mappy-bp(screen-md) {
+	margin: 2em 0 0;
+
+	@include mappy-bp(screen-xs) {
 	    display: flex;
 	    justify-content: flex-end; 
 	    align-items: center;
 	   // margin: 0.5em 0 1em;
 	}
 
+	ul {
+		li {
+			&:first-child {
+				a:after {
+					@include mappy-bp(screen-xs) {
+						margin-left: 0.25em;
+						content: ' - ';
+					}
+				}
+			}
+		}
+	}
+
 	a {
-		@include mappy-bp(screen-md) {
-			font-size: 90%;
-			//text-transform: none;
-			//padding: 0;
+		font-size: 110%;
+		color: rgba(white, 0.8);
+		text-transform: uppercase;
+
+		&:hover {
+			color: white;
 		}
 	}
 

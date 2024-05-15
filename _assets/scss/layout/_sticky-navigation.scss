@@ -29,12 +29,6 @@ body {
 				height: 35px;
 			} 
 
-			.secondary-menu {
-				@include mappy-bp(screen-md) {
-					display: none;
-				}
-			}
-
 			.network a svg circle, 
 			.network a svg path, 
 			.network a svg polygon {

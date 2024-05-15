@@ -111,9 +111,12 @@ get_header();
 				<?php while ( have_rows( 'gal_galerie' ) ) : the_row(); ?>
 					<?php //ACF field must be set as ID
 					if(get_sub_field('photo')) { ?>
-						<figure>
-							<?php echo wp_get_attachment_image(get_sub_field('photo'), 'galerie-home'); ?>
-						</figure>
+						<a href="<?php echo wp_get_attachment_url(get_sub_field( 'photo' )); ?>" data-lightbox="enbas" data-title="Left & Right">
+							<figure>
+								<?php echo wp_get_attachment_image(get_sub_field('photo'), 'galerie-home', '', array('class' => 'no-lazyload'));?>
+								
+							</figure>
+						</a>
 					<?php } ?>
 				<?php endwhile; ?>
 			<?php endif; ?>

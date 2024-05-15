@@ -41,6 +41,7 @@ function scripts() {
                     //"./_assets/js/abstract/wpml/legacy-dropdown.js",
                     //"./_assets/js/abstract/wpml/legacy-dropdown-click.js",
                     "./_assets/js/jquery.cookie.js",
+                    "./_assets/js/abstract/lightbox.min.js",
                     //"./_assets/js/abstract/owl.carousel.min.js",
                     "./_assets/js/navigation.js",
                     "./_assets/js/sticky-menu.js",

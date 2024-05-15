@@ -51,6 +51,11 @@ jQuery(document).ready(function ($) {
 
 })
 
+lightbox.option({
+  'albumLabel': "Image %1 sur %2",
+})
+
+
 jQuery(".page-template-homepage .menu-anchor a").click(function() {
     event.preventDefault();
     var menuLink = jQuery(this).attr('href');

@@ -53,9 +53,11 @@ jQuery(document).ready(function ($) {
 
 jQuery(".page-template-homepage .menu-anchor a").click(function() {
     event.preventDefault();
-    var menuItem = jQuery(this).attr('href');
+    var menuLink = jQuery(this).attr('href');
+    var menuHash = menuLink.split('#').pop();
+    var menuItem = "#" + menuHash;
 
-    //console.log(menuItem);
+    console.log(menuItem);
 
 
     jQuery('#site-navigation').removeClass('toggled');

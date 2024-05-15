@@ -47,15 +47,17 @@ Text Domain: _turbo
 //@import "./scss/modules/wpml";
 
 // Start WooCommerce
-/* @import "./scss/modules/woocommerce/woocommerce-layout";
+@import "./scss/modules/woocommerce/woocommerce-layout";
 
 @include mappy-bp(max-width screen-sm) {
 	@import "./scss/modules/woocommerce/woocommerce-smallscreen";
 }
 
-@import "./scss/modules/woocommerce/woocommerce"; */
+@import "./scss/modules/woocommerce/woocommerce"; 
 // End WooCommerce
 
+
+@import "./scss/layout/woo";
 
 @import "./scss/page-templates/homepage";
 @import "./scss/page-templates/gdpr";

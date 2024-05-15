@@ -17,7 +17,7 @@ require get_template_directory() . '/inc/enqueue.php';
 require get_template_directory() . '/inc/theme-options.php';
 require get_template_directory() . '/inc/user-roles.php';
 
-//require get_template_directory() . '/inc/plugins/woocommerce.php';
+require get_template_directory() . '/inc/plugins/woocommerce.php';
 //require get_template_directory() . '/inc/plugins/yoast.php';
 //require get_template_directory() . '/inc/plugins/w3tc.php';
 

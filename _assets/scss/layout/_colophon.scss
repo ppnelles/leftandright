@@ -2,7 +2,7 @@
 	background-color: white;
 	color: #6b9390;
 	font-size: 0.8em;
-	padding: 3em 5% 1.5em;
+	padding: 3em 2.5% 1.5em;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
@@ -22,6 +22,19 @@
 	
 	@include mappy-bp(screen-sm) {
 		text-align: left;	
+	}
+
+	.network {
+		a {
+			path,
+			circle {
+				fill: $green;
+			}
+
+			polygon {
+				fill: $green;
+			}
+	    }
 	}
 
 	.site-info {

@@ -690,6 +690,8 @@ p.demo_store,
 	button.button,
 	input.button,
 	#respond input#submit {
+		font-family: $f-title;
+		text-transform: uppercase;
 		font-size: 100%;
 		margin: 0;
 		line-height: 1;
@@ -701,8 +703,8 @@ p.demo_store,
 		font-weight: 700;
 		border-radius: 3px;
 		left: auto;
-		color: $secondarytext;
-		background-color: $secondary;
+		color: white;
+		background-color: $green;
 		border: 0;
 		display: inline-block;
 		background-image: none;
@@ -740,13 +742,13 @@ p.demo_store,
 		}
 
 		&.alt {
-			background-color: $primary;
-			color: $primarytext;
+			background-color: $green;
+			color: white;
 			-webkit-font-smoothing: antialiased;
 
 			&:hover {
-				background-color: darken($primary, 5%);
-				color: $primarytext;
+				background-color: $dark-green;
+				color: white;
 			}
 
 			&.disabled,
@@ -1768,7 +1770,7 @@ p.demo_store,
 	position: relative;
 	background-color: lighten($secondary, 5%);
 	color: $secondarytext;
-	border-top: 3px solid $primary;
+	border-top: 3px solid $green;
 	list-style: none outside;
 
 	@include clearfix();
@@ -1816,10 +1818,10 @@ p.demo_store,
 }
 
 .woocommerce-info {
-	border-top-color: #1e85be;
+	border-top-color: $green;
 
 	&::before {
-		color: #1e85be;
+		color: $green;
 	}
 }
 

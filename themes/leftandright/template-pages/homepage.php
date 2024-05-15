@@ -107,8 +107,18 @@ get_header();
 			<h2><?php the_field( 'gal_title' ); ?></h2>
 		</header>
 		<div class="the-gallery">
+			<?php if ( have_rows( 'gal_galerie' ) ) : ?>
+				<?php while ( have_rows( 'gal_galerie' ) ) : the_row(); ?>
+					<?php //ACF field must be set as ID
+					if(get_sub_field('photo')) { ?>
+						<figure>
+							<?php echo wp_get_attachment_image(get_sub_field('photo'), 'galerie-home'); ?>
+						</figure>
+					<?php } ?>
+				<?php endwhile; ?>
+			<?php endif; ?>
 			<?php for ($i=0; $i < 10; $i++) { ?>
-				<figure><img src="<?php bloginfo('template_directory'); ?>/img/img-placeholder.jpg"></figure>
+				
 			<?php } ?>
 		</div>
 	</section>

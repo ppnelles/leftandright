@@ -27,9 +27,9 @@ function custom_manage_privacy_options($caps, $cap, $user_id, $args)
 * https://developer.wordpress.org/reference/functions/add_image_size/
 */
 
-// add_action( 'after_setup_theme', '_turbo_image_size' );
+add_action( 'after_setup_theme', '_turbo_image_size' );
 
-// function _turbo_image_size() {
-// 	add_image_size( 'hero-homepage', 1800, 1200, true );
-//     //add_image_size( 'card-slider', 460, 320, true );
-// }
+function _turbo_image_size() {
+	add_image_size( 'galerie-home', 600, 600, true );
+    //add_image_size( 'card-slider', 460, 320, true );
+}

@@ -189,16 +189,16 @@ function my_custom_checkout_field_display_admin_order_meta($order){
 
 //Add 'starting price' with an ACF true/false to check
 
-function ppn_change_product_price_display( $price ) {
-    if(get_field('show_price_starting_at')) {
-        $startPrice = 'Ab '.$price;
-        return $startPrice;
-    }
-    else {
-        return $price;
-    }
-  }
-add_filter( 'woocommerce_get_price_html', 'ppn_change_product_price_display' );
+// function ppn_change_product_price_display( $price ) {
+//     if(get_field('show_price_starting_at')) {
+//         $startPrice = 'Ab '.$price;
+//         return $startPrice;
+//     }
+//     else {
+//         return $price;
+//     }
+//   }
+// add_filter( 'woocommerce_get_price_html', 'ppn_change_product_price_display' );
 
 
 // function ppn_change_cart_item_price_display($price) {

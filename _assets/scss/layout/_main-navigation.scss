@@ -104,7 +104,7 @@
 	  display: flex;
 	  align-items: center;
 	  justify-content: center;
-	  margin-left: 0.5em;
+	  margin-left: 0.25em;
 	  text-transform: uppercase;
 	  display: inline-block;
 	  padding: 0 .25em;
@@ -115,6 +115,10 @@
 	  position: relative;
 	  top: -3px;
 	  font-size: 90%;
+
+	  @include mappy-bp(screen-sm) {
+	  	margin-left: 0.5em;	
+	  }
 
 	  &:hover {
 	    background-color: $green;
@@ -138,20 +142,33 @@
 	}
 
 	.network ul li {
-		margin: 0 0.5em 0 0;
+		margin: 0 0.25em 0 0;
+
+		@include mappy-bp(screen-sm) {
+				margin: 0 0.5em 0 0;
+		}
 	}
 
 	ul.mobile-cart {
-		margin: 0 1em;
+		margin: 0 0.5em;
+
+		@include mappy-bp(screen-sm) {
+			margin: 0 1em;	
+		}
 	}
 
 	a.cart-contents {
 		//@include text-hide();
 		display: block;
-		width: 34px;
-		height: 31px;
+		width: 26px;
+		height: 27px;
 		background: transparent url('img/my-cart.svg') 0 0 no-repeat;
 		position: relative;
+
+		@include mappy-bp(screen-sm) {
+			width: 34px;
+			height: 31px;
+		}
 
       span.cart-link {
         visibility: hidden;

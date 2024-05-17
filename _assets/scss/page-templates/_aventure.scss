@@ -1,0 +1,40 @@
+.page-template-adventure {
+
+	main {
+
+		@include mappy-bp(screen-sm) {
+		    align-items: flex-start;
+		    flex-direction: row-reverse;
+	        display: flex;
+	        flex-wrap: wrap;
+	        justify-content: space-between;	
+		}
+
+		figure {
+			@include mappy-bp(screen-sm) {
+				width: 30%;	
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+		}
+
+		.content {
+			@include mappy-bp(screen-sm) {
+				width: 65%;	
+			}
+
+			h2 {
+				@include mappy-bp(screen-sm) {
+					margin-top: 0;	
+				}
+			}
+		}
+	}
+
+
+
+
+}

@@ -15,7 +15,7 @@ get_header();
 		<?php //ACF field must be set as ID
 		if(get_field('int_img')) { ?>
 			<figure class="int-img">
-				<?php echo wp_get_attachment_image(get_field('int_img'), 'full'); ?>
+				<img src="<?php bloginfo('template_directory'); ?>/img/left-and-right-by-max-richard-5-1.jpg" alt="">
 			</figure>
 		<?php } ?>
 
@@ -75,9 +75,15 @@ get_header();
 							<h3><?php the_sub_field( 'title' ); ?></h3>
 							<?php //ACF field must be set as ID
 							if(get_sub_field('photo')) { ?>
-								<figure>
-									<?php echo wp_get_attachment_image(get_sub_field('photo'), 'large'); ?>
-								</figure>
+								<a href="<?php the_sub_field( 'link' ); ?>">
+									<figure>
+										<?php echo wp_get_attachment_image(get_sub_field('photo'), 'large'); ?>
+									</figure>
+									<div class="content">
+										<img src="<?php bloginfo('template_directory'); ?>/img/magnificient-glass.svg">
+										<p class="label">Découvrir</p>
+									</div>
+								</a>
 							<?php } ?>
 						</li>
 					<?php endwhile; ?>

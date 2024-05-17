@@ -456,10 +456,12 @@ p.demo_store,
 					border: 0;
 					vertical-align: top;
 					line-height: 2em;
+					padding: 0;
 				}
 
 				label {
 					font-weight: 700;
+					margin: 0.5em 0 0;
 				}
 
 				select {
@@ -758,7 +760,7 @@ p.demo_store,
 			&.disabled:hover,
 			&:disabled:hover,
 			&:disabled[disabled]:hover {
-				background-color: $primary;
+				background-color: $green;
 				color: $primarytext;
 			}
 		}

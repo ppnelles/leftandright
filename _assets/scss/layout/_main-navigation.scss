@@ -186,16 +186,12 @@
 	width: auto;
 	background-color: transparent;
 	border: none;
-	padding: 0.25em 1em;
+	padding: 0;
 	position: relative;
 	top: -2px;
 	position: relative;
 	z-index: 999;
-	margin-left: 0.5em;
-
-	@include mappy-bp(screen-sm) {
-		margin-left: 0;
-	}
+	margin-left: 0;
 
 	&:hover {
 		background-color: transparent;
@@ -332,6 +328,7 @@
 	}
 
 	a {
+		text-align: center;
 		font-size: 110%;
 		color: rgba(white, 0.8);
 		text-transform: uppercase;

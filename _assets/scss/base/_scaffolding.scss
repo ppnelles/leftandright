@@ -135,6 +135,16 @@ address {
 #intro-header {
   position: relative;
 
+  figure {
+    img {
+      display: block;
+      width: 100%;
+      min-height: 300px;
+      object-fit: cover;
+      object-position: right center;
+    }
+  }
+
   div {
     margin: 0;
     position: absolute;
@@ -152,6 +162,7 @@ address {
       width: 100%;
       padding: 0 2.5%;
       text-align: center;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 
       @include mappy-bp(screen-md) {
         font-size: calc(1.8rem + 1.2vw);

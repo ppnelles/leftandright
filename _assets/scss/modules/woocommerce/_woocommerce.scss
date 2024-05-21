@@ -1768,7 +1768,7 @@ p.demo_store,
 .woocommerce-message,
 .woocommerce-error,
 .woocommerce-info {
-	padding: 1em 2em 1em 3.5em;
+	padding: 1em 2em;
 	margin: 0 0 2em;
 	position: relative;
 	background-color: lighten($secondary, 5%);
@@ -1780,14 +1780,14 @@ p.demo_store,
 	width: auto;
 	word-wrap: break-word;
 
-	&::before {
-		font-family: "WooCommerce";
-		content: "\e028";
-		display: inline-block;
-		position: absolute;
-		top: 1em;
-		left: 1.5em;
-	}
+	// &::before {
+	// 	font-family: "WooCommerce";
+	// 	content: "\e028";
+	// 	display: inline-block;
+	// 	position: absolute;
+	// 	top: 1em;
+	// 	left: 1.5em;
+	// }
 
 	.button {
 		float: right;
@@ -1822,6 +1822,7 @@ p.demo_store,
 
 .woocommerce-info {
 	border-top-color: $green;
+	text-align: center;
 
 	&::before {
 		color: $green;

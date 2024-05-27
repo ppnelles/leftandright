@@ -15,7 +15,7 @@ get_header();
 		<?php //ACF field must be set as ID
 		if(get_field('int_img')) { ?>
 			<figure class="int-img">
-				<img src="<?php bloginfo('template_directory'); ?>/img/left-and-right-by-max-richard-5-1.jpg" alt="">
+				<img src="<?php bloginfo('template_directory'); ?>/img/left-and-right-kayak-by-maxime-richard.jpg" alt="">
 			</figure>
 		<?php } ?>
 

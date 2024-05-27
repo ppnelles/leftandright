@@ -192,13 +192,16 @@
 				margin: 0 0 2em;
 
 				@include mappy-bp(screen-sm) {
-					width: 48%;
-					margin: 0 1%;	
+					width: 30.3333333%;
+					margin: 0 1.5%;
 				}
 
-				@include mappy-bp(screen-md) {
-					width: 33.3333333%;
-					margin: 0 5%;
+				h3 {
+					span {
+						@include mappy-bp(screen-sm) {
+							display: block;	
+						}
+					}
 				}
 
 				a {

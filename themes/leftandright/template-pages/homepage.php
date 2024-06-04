@@ -81,7 +81,7 @@ get_header();
 									</figure>
 									<div class="content">
 										<img src="<?php bloginfo('template_directory'); ?>/img/magnificient-glass.svg">
-										<p class="label"><?php if(ICL_LANGUAGE_CODE == 'fr') { echo "Découvrir"; } else { echo "Discover"; } ?></p>
+										<p class="label"><?php if(ICL_LANGUAGE_CODE == 'fr') { echo "Découvrir"; } elseif(ICL_LANGUAGE_CODE == 'nl') { echo "Ontdekken"; } else { echo "Discover"; } ?></p>
 									</div>
 								</a>
 							<?php } ?>

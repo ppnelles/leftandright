@@ -61,8 +61,21 @@ a.wc-block-components-product-name {
 }
 
 .woocommerce div.product div.images .flex-control-thumbs li {
-  width: 20%;
+  width: calc(20% - 4px);
+  margin: 2px;
+  border: 1px solid #c8c8c8;
   clear: none !important;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.woocommerce div.product div.images img {
+  width: calc(100% - 4px);
+  margin: 0 0 2px 2px;
 }
 
 body.woocommerce-cart,

@@ -11,10 +11,18 @@
 
 if(ICL_LANGUAGE_CODE == 'fr') {
 	$gdprLink = "Mentions légales et vie privée";
-	$regUrl = 8;
+	$cgvLink = "Conditions générales de ventes";
+	$cgvUrl = 445;
+}
+if(ICL_LANGUAGE_CODE == 'en') {
+	$gdprLink = "Privacy policy";
+	$cgvLink = "Conditions générales de ventes";
+	$cgvUrl = 103;
 }
 else {
 	$gdprLink = "Privacy policy";
+	$cgvLink = "Conditions générales de ventes";
+	$cgvUrl = 444;
 }
 
 ?>
@@ -37,6 +45,8 @@ else {
 				<?php endif; ?> 
 
 				<span> <i>|</i> <a href="<?php echo get_privacy_policy_url(); ?>"><?php echo $gdprLink; ?></a></span>
+
+				<span> <i>|</i> <a href="<?php echo the_permalink($cgvUrl); ?>"><?php echo $cgvLink; ?></a></span>
 
 				<span> <i>|</i> <a href="https://getin.agency" target="_blank">Website by GET IN</a></span>
 			</div>

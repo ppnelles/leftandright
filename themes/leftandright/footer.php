@@ -20,7 +20,7 @@ elseif(ICL_LANGUAGE_CODE == 'en') {
 	$cgvUrl = 103;
 }
 else {
-	$gdprLink = "Privacy policy";
+	$gdprLink = "Privacybeleid";
 	$cgvLink = "Gebruiksvoorwaarden";
 	$cgvUrl = 444;
 }

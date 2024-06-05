@@ -14,7 +14,7 @@ if(ICL_LANGUAGE_CODE == 'fr') {
 	$cgvLink = "Conditions générales de ventes";
 	$cgvUrl = 445;
 }
-if(ICL_LANGUAGE_CODE == 'en') {
+elseif(ICL_LANGUAGE_CODE == 'en') {
 	$gdprLink = "Privacy policy";
 	$cgvLink = "Conditions of use";
 	$cgvUrl = 103;

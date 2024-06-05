@@ -16,12 +16,12 @@ if(ICL_LANGUAGE_CODE == 'fr') {
 }
 if(ICL_LANGUAGE_CODE == 'en') {
 	$gdprLink = "Privacy policy";
-	$cgvLink = "Conditions générales de ventes";
+	$cgvLink = "Conditions of use";
 	$cgvUrl = 103;
 }
 else {
 	$gdprLink = "Privacy policy";
-	$cgvLink = "Conditions générales de ventes";
+	$cgvLink = "Gebruiksvoorwaarden";
 	$cgvUrl = 444;
 }
 

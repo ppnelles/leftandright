@@ -33,6 +33,61 @@ endif; ?>
 
 	<?php wp_head(); ?>
 	<?php get_template_part('/template-parts/content', 'favicons' ); ?>	
+
+	<?php if(ICL_LANGUAGE_CODE == 'fr') { ?>
+		<meta name="description" content="Le packraft Noguera est une nouvelle solution de kayak gonflable permetant d’avoir du plaisir sur l’eau et d’avoir des sensations de glisse."/>
+		<link rel="canonical" href="https://leftandright.be/">
+		<meta property="og:locale" content="fr_FR" class="yoast-seo-meta-tag"/>
+		<meta property="og:type" content="website" class="yoast-seo-meta-tag"/>
+		<meta property="og:title" content="Left And Right - Le packraft de Maxime Richard" class="yoast-seo-meta-tag" />
+		<meta property="og:description" content="Le packraft Noguera est une nouvelle solution de kayak gonflable permetant d’avoir du plaisir sur l’eau et d’avoir des sensations de glisse." />
+		<meta property="og:url" content="https://leftandright.be/" />
+		<meta property="og:site_name" content="Left And Right" />
+		<meta property="og:image" content="https://leftandright.be/wp-content/uploads/2024/06/og-image-fr.png" class="yoast-seo-meta-tag" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:type" content="image/png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Left And Right - Le packraft de Maxime Richard" />
+		<meta name="twitter:description" content="Le packraft Noguera est une nouvelle solution de kayak gonflable permetant d’avoir du plaisir sur l’eau et d’avoir des sensations de glisse." />
+		<meta name="twitter:image" content="https://leftandright.be/wp-content/uploads/2024/06/og-image-fr.png" class="yoast-seo-meta-tag" />
+
+	<?php } elseif(ICL_LANGUAGE_CODE == 'nl') { ?>
+		<meta name="description" content="De Noguera packraft is een nieuwe opblaasbare kajakoplossing om plezier te hebben op het water en de sensatie van het glijden te voelen."/>
+		<link rel="canonical" href="https://leftandright.be/">
+		<meta property="og:locale" content="nl" class="yoast-seo-meta-tag"/>
+		<meta property="og:type" content="website" class="yoast-seo-meta-tag"/>
+		<meta property="og:title" content="Left And Right - De packraft van Maxime Richard" class="yoast-seo-meta-tag" />
+		<meta property="og:description" content="De Noguera packraft is een nieuwe opblaasbare kajakoplossing om plezier te hebben op het water en de sensatie van het glijden te voelen." />
+		<meta property="og:url" content="https://leftandright.be/nl" />
+		<meta property="og:site_name" content="Left And Right" />
+		<meta property="og:image" content="https://leftandright.be/wp-content/uploads/2024/06/og-image-nl.png" class="yoast-seo-meta-tag" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:type" content="image/png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Left And Right - De packraft van Maxime Richard" />
+		<meta name="twitter:description" content="De Noguera packraft is een nieuwe opblaasbare kajakoplossing om plezier te hebben op het water en de sensatie van het glijden te voelen." />
+		<meta name="twitter:image" content="https://leftandright.be/wp-content/uploads/2024/06/og-image-nl.png" class="yoast-seo-meta-tag" />
+	<?php } elseif(ICL_LANGUAGE_CODE == 'en') { ?>
+		<meta name="description" content="The Noguera packraft is a new inflatable kayak solution for having fun on the water and feeling the thrill of gliding."/>
+		<link rel="canonical" href="https://leftandright.be/">
+		<meta property="og:locale" content="en" class="yoast-seo-meta-tag"/>
+		<meta property="og:type" content="website" class="yoast-seo-meta-tag"/>
+		<meta property="og:title" content="Left And Right - Maxime Richard's Packraft" class="yoast-seo-meta-tag" />
+		<meta property="og:description" content="The Noguera packraft is a new inflatable kayak solution for having fun on the water and feeling the thrill of gliding." />
+		<meta property="og:url" content="https://leftandright.be/en" />
+		<meta property="og:site_name" content="Left And Right" />
+		<meta property="og:image" content="https://leftandright.be/wp-content/uploads/2024/06/og-image-en.png" class="yoast-seo-meta-tag" />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:type" content="image/png" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Left And Right - Maxime Richard's Packraft" />
+		<meta name="twitter:description" content="The Noguera packraft is a new inflatable kayak solution for having fun on the water and feeling the thrill of gliding." />
+		<meta name="twitter:image" content="https://leftandright.be/wp-content/uploads/2024/06/og-image-en.png" class="yoast-seo-meta-tag" />
+	<?php } ?>
+
 </head>
 
 <body <?php body_class(); ?> role="document" itemscope="itemscope" itemtype="http://schema.org/WebPage">
